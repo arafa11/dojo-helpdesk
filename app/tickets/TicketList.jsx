@@ -1,6 +1,9 @@
 import Link from 'next/link'
 
 async function getTickets() {
+  //imitate delay
+  // await Promise.resolve((resolve) => setTimeout(resolve, 3000))
+
   const res = await fetch('http://localhost:5000/tickets', {
     next: {
       revalidate: 0, // fetch every time
