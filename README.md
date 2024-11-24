@@ -23,7 +23,9 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ```bash
 npx create-next-app@13.4.9
 #
-
+npx json-server --watch --port 5000 ./_data/db.json
+# or if installed gloablly
+json-server --watch --port 5000 ./_data/db.json
 ```
 
 ## Learn More
